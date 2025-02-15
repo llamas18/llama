@@ -1,0 +1,101 @@
+> .:
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Приглашение на свадьбу</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="your_photo.jpg" alt="Наша фотография">
+        <h1>Алексей и Екатерина</h1>
+        <p class="date">29.05.2025</p>
+        <h2>Дорогие гости</h2>
+        <p>С большой радостью приглашаем вас на наш первый семейный праздник – нашу свадьбу! Мы очень хотим, чтобы в этот день с нами рядом были самые близкие люди!</p>
+    </header>
+    
+    <section id="countdown">
+        <h2>До свадьбы осталось</h2>
+        <div id="timer">00:00:00:00</div>
+    </section>
+    
+    <section id="location">
+        <h2>Локация</h2>
+        <p>Наша свадьба пройдёт в банкетном зале «Загородный клуб Любовь»</p>
+        <p>Весенняя ул.,9, д. Благовещенка</p>
+    </section>
+    
+    <section id="map">
+        <h2>Как добраться</h2>
+        <p>Мы подготовили для вас карту, чтобы вы точно добрались и порадовали нас своим присутствием</p>
+        <iframe src="https://yandex.ru/map-widget/v1/-/CCUb7H~XDC" width="600" height="400"></iframe>
+    </section>
+    
+    <section id="schedule">
+        <h2>Программа дня</h2>
+        <ul>
+            <li><img src="icon1.png"> 15:00 – Сбор гостей</li>
+            <li><img src="icon2.png"> 16:00 – Свадебная церемония</li>
+            <li><img src="icon3.png"> 17:00 – Банкет</li>
+            <li><img src="icon4.png"> 20:00 – Свадебный торт</li>
+            <li><img src="icon5.png"> 22:00 – Окончание мероприятия</li>
+        </ul>
+    </section>
+    
+    <section id="details">
+        <h2>Детали</h2>
+        <p><strong>Подарки:</strong> Ваши улыбки – лучший подарок, но пожелания в конвертах тоже приветствуются.</p>
+        <p><strong>Дети:</strong> Мы не предполагаем развлечений и посадочных мест для детей.</p>
+        <p><strong>Цветы:</strong> Просим не дарить цветы. Будем рады бутылочке вина или подарочному сертификату.</p>
+        <p><strong>Выражение эмоций:</strong> Просим воздержаться от криков «Горько!».</p>
+    </section>
+    
+    <section id="dresscode">
+        <h2>Дресс-код</h2>
+        <p>Нам будет приятно, если вы поддержите стилистику нашей свадьбы.</p>
+        <div class="palette">
+            <div class="color olive"></div>
+            <div class="color rose"></div>
+            <div class="color beige"></div>
+        </div>
+        <p>Мужчины – официальный деловой стиль.</p>
+        <p>Свадьба будет на открытом воздухе, учитывайте прогноз погоды.</p>
+    </section>
+    
+    <section id="rsvp">
+        <h2>Присутствие на торжестве</h2>
+        <p>Будем ждать ваш ответ до 29.04.2025.</p>
+        <form id="guestForm">
+            <label>Сможете ли вы присутствовать на торжестве?</label>
+            <input type="radio" name="attendance" value="yes"> Я приду
+            <input type="radio" name="attendance" value="no"> Прийти не получится
+            
+            <label>Имя и фамилия:</label>
+            <input type="text" name="fullname" required>
+            
+            <label>Предпочтения по напиткам:</label>
+            <input type="checkbox" name="drink" value="red_wine"> Вино красное
+            <input type="checkbox" name="drink" value="white_wine"> Вино белое
+            <input type="checkbox" name="drink" value="champagne"> Шампанское
+            <input type="checkbox" name="drink" value="whiskey"> Виски
+            <input type="checkbox" name="drink" value="vodka"> Водка
+            <input type="checkbox" name="drink" value="non_alcoholic"> Безалкогольные напитки
+            
+            <label>Выбор горячего:</label>
+            <input type="radio" name="hot_dish" value="fish"> Рыба
+            <input type="radio" name="hot_dish" value="meat"> Мясо
+            
+            <button type="submit">Отправить</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>Если у вас будут дополнительные вопросы, напишите нам: <a href="https://wa.me/yourwhatsapplink">WhatsApp</a></p>
+    </footer>
+
+> .:
+<script src="script.js"></script>
+</body>
+</html>
